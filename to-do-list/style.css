@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.body{
+    margin:0;
+    height : 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    margin: 0;
+    height:50px;
+    font-size : 32px;
+    background-color: #FFBF00;
+    color: white;
+}
+
+.header__logo{
+    font-size:32px;
+    text-align: center;
+    height: 50px;
+    line-height:50px;
+    margin: 0;
+}
+
+.h1{
+    margin: 0;
+}
+
+li {
+    list-style: none;
+  }
+
+.options{
+    text-align: center;
+    margin : 10px 10px 10px 10px;
+}
+
+.options__btn{
+    height: 35px;
+    text-align: center;
+    background-color: #F7D358;
+    border: 0;
+    color : black;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.todos{
+    background-color: whitesmoke;
+    display: flex;
+    flex-grow:1;
+}
+
+.todos__today,
+.todos__tomorrow{
+    width: 100%;
+}
+
+.todos__today,
+.todos__tomorrow{
+    border-right: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.todos__tomorrow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.todos__items {
+    flex-grow:1;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.todos__item {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border-bottom: 1px solid black;
+}
+
+.todos__name{
+    height:36px;
+    line-height:36px;
+}
+
+.todos__input{
+    width:100%;
+    height: 30px;
+    border: 0 ;
+    outline: 0;
+}
+
+.ul {
+    margin:0px;
+    padding:0px;
+}
+
+.button{
+    cursor:pointer;
+}
+.footer{
+    color:white;
+    background-color: #FFBF00;
+    height:50px;
+    line-height:50px;
+    text-align: center;
+}
+
+.delete__img{
+    width: 25px;
+    height: 25px;
+    margin-top: 5px;
+}
+
+.delete__button,
+.add__button{
+    border:none;
+    cursor: pointer;
+    background-color:transparent;
+}
+
+.add__img{
+    width: 25px;
+    height: 25px;
+    margin-top: 5px;
+}

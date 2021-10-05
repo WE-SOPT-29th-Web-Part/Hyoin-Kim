@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <Link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__logo">To Do List</h1>
+    </header>
+    <nav class="options">
+        <button class="options__btn options__today">오늘 할일만 보기</button>
+        <button class="options__btn options__tomorrow">내일 할일만 보기</button>
+        <button class="options__btn options__both">모두 보기</button>
+    </nav>
+    <main class="todos">
+        <section class="todos__today">
+            <h2 class="todos__header">오늘 할 일</h2>
+            <ul class="todos__items">
+                <li class="todos__item">
+                    <span class="todos__name">SOPT 과제 수행</span>
+                    <button class="delete__button">
+                        <img class="delete__img" src="assets/delete.png" alt=""/>
+                    </button>
+
+                </li>
+                <li class="todos__item">
+                    <span class="todos__name">아티클 읽기</span>
+                    <button class="delete__button">
+                        <img class="delete__img" src="assets/delete.png" alt=""/>
+                    </button>
+                </li>
+                <li class="todos__item">
+                    <span class="todos__name">디지털 포렌직 과제 수행</span>
+                    <button class="delete__button">
+                        <img class="delete__img" src="assets/delete.png" alt=""/>
+                    </button>
+                </li>
+            </ul>
+            <input class="todos__input" type="text" placeholder="할 일을 메모해보세요!"/>
+            <button class="add__button">
+                <img class="add__img" src="assets/note.png" alt=""/>
+            </button>
+        </section>
+        <section class="todos__tomorrow">
+            <h2>내일 할 일</h2>
+            <ul class="todos__items">
+                <li class="todos__item">
+                    <span class="todos__name">콘텐츠 제작기초 과제</span>
+                    <button class="delete__button">
+                        <img class="delete__img" src="assets/delete.png" alt=""/>
+                    </button>
+                </li>
+                <li class="todos__item">
+                    <span class="todos__name">velog 작성</span>
+                    <button class="delete__button">
+                        <img class="delete__img" src="assets/delete.png" alt=""/>
+                    </button>
+                </li>
+            </ul>
+            <input class="todos__input" type="text" placeholder="할 일을 메모해보세요!"/>
+            <button class="add__button">
+                <img class="add__img" src="assets/note.png" alt=""/>
+            </button>
+        </section>
+    </main>
+    <footer class="footer">SOPT 29th WEB Part - Kim Hyo-in</footer>
+</body>
+</html>

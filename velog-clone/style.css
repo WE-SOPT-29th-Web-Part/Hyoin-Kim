@@ -88,6 +88,13 @@
     cursor: pointer;
     border-radius: 10px;
     background-color: #F2F2F2;
+    transition: 0.3s ease-in;
+}
+
+.container:hover {
+    box-shadow: 1px 1px 20px #ddd;
+    background-color: #E6E6E6;
+    transform: translateY(-15px);
 }
 
 .card__image{

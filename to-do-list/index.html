@@ -19,54 +19,30 @@
     <main class="todos">
         <section class="todos__today">
             <h2 class="todos__header">오늘 할 일</h2>
-            <ul class="todos__items">
+            <ul class="todos__items" id="memos">
                 <li class="todos__item">
-                    <span class="todos__name">SOPT 과제 수행</span>
-                    <button class="delete__button">
-                        <img class="delete__img" src="assets/delete.png" alt=""/>
-                    </button>
-
-                </li>
-                <li class="todos__item">
-                    <span class="todos__name">아티클 읽기</span>
-                    <button class="delete__button">
-                        <img class="delete__img" src="assets/delete.png" alt=""/>
-                    </button>
-                </li>
-                <li class="todos__item">
-                    <span class="todos__name">디지털 포렌직 과제 수행</span>
-                    <button class="delete__button">
+                    <span class="todos__name"> $element.text </span>
+                    <button class="delete__button"  onclick="deleteMemo(this);" >
                         <img class="delete__img" src="assets/delete.png" alt=""/>
                     </button>
                 </li>
             </ul>
-            <input class="todos__input" type="text" placeholder="할 일을 메모해보세요!"/>
+            <input class="todos__input" id="todos__input" type="text" placeholder="할 일을 메모해보세요!" onchange="addTodayMemo();"/>
             <button class="add__button">
                 <img class="add__img" src="assets/note.png" alt=""/>
             </button>
         </section>
         <section class="todos__tomorrow">
             <h2>내일 할 일</h2>
-            <ul class="todos__items">
-                <li class="todos__item">
-                    <span class="todos__name">콘텐츠 제작기초 과제</span>
-                    <button class="delete__button">
-                        <img class="delete__img" src="assets/delete.png" alt=""/>
-                    </button>
-                </li>
-                <li class="todos__item">
-                    <span class="todos__name">velog 작성</span>
-                    <button class="delete__button">
-                        <img class="delete__img" src="assets/delete.png" alt=""/>
-                    </button>
-                </li>
+            <ul class="todos__items" id="memos2">
             </ul>
-            <input class="todos__input" type="text" placeholder="할 일을 메모해보세요!"/>
+            <input class="todos__input" id="todos__input2" type="text" placeholder="할 일을 메모해보세요!" />
             <button class="add__button">
                 <img class="add__img" src="assets/note.png" alt=""/>
             </button>
         </section>
     </main>
     <footer class="footer">SOPT 29th WEB Part - Kim Hyo-in</footer>
+    <script src="main.js"></script>
 </body>
 </html>
